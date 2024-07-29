@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(2, 2, 50);
+}
+
+nav{
+    width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    color: #eb7620;
+	float: right;
+	box-shadow: 2px 0px 5px rgb(80, 79, 79);
+}
+.logo{
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 2px;
+	color: white;
+    transition: 0.3 ease;
+}
+.logo:hover{
+    color: #555;
+    text-shadow: 0 0 25px #555,
+                 0 0 50px #555;
+    transform: scale(1.1);             
+}
+.logo span{
+	color: brown;
+}
+
+nav ul{
+    float: right;
+    line-height: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+    margin-inline: 30px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    background-color: rgb(226, 223, 220);
+    transition: 0.5s ease;
+    color: black;
+
+}
+.btn button{
+    width: 100px;
+    height: 30px;
+    border: 3px solid rgb(216, 97, 97);
+    background-color: rgb(2, 2, 50);
+    color: white;
+    border-radius: 20px;
+    margin-top: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: rgb(210, 112, 112);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    
+}
+.heading{
+    display: grid;
+    height: 90vh;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-image: url("background image.jpg");
+    background-size: 100%;
+}
+.heading .content-1{
+    display: block;
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 100%;
+
+}
+.heading .content-1 .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.heading .content-1 .info h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family:  serif;
+    color: white;
+    transform: scaleY(1.2);
+    text-shadow: #e8e1e1;
+}
+.heading .content-1 .info p{
+    font-size: 20px;
+    line-height: 2pc;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.heading .content-1 button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(233, 32, 32);
+    border: 2px solid rgb(204, 123, 123);
+    cursor: pointer;
+}
+.heading .content-1 button:hover{
+    background-color: rgb(50, 50, 218);
+    color: white;
+}
+.menu{
+    width: 100%;
+    padding: 50px 0;
+    height: 100%;
+    background-color: #f3eeee;
+
+}
+.menu h1{
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.menu h1 span{
+    color: orangered;
+
+}
+.menu .menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu .menu-box .menu-bar{
+    width: 325px;
+    height: 420px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3) ;
+    border-radius: 35px;
+    background-color: white;
+}
+.menu .menu-box .menu-bar .menu-img{
+    width: 300px;
+    height: 240px;
+    margin: 0 auto;
+    overflow:hidden;
+    border-radius: 35px;
+    color: white;
+}
+.menu .menu-box .menu-bar .menu-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu-box .menu-bar .menu-img:hover img{
+    transform: scale(1.1);
+}
+.menu .menu-box .menu-bar .small-card{
+    
+    width :40px;
+    height: 40px;
+    position: relative;
+    top: -240px;
+    float: right;
+    right: -8px;
+    opacity: 1;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.menu .menu-box .menu-bar:hover .small-card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu .menu-box .menu-bar:hover .small-card i:hover{
+    color: red;
+}
+
+
+.menu .menu-box .menu-bar .more h4{
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+    font-size: 22px;
+    color: #eb7620;
+
+}
+.menu .menu-box .menu-bar .more p{
+    text-align: center;
+    font-size: 15px;
+}
+h3{
+    text-align: center;
+}
+.menu-icons{
+    color:rgb(255, 201, 7);
+    text-align: center;  
+}
+.menu-btn {
+    background-color: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 5px 8px;
+    margin: 0 110px;
+    display: flex;
+    border-radius: 5px;
+}
+.menu-btn:hover{
+    background-color: black;
+    color: white; 
+}
+.footer{
+    background-color:black;
+    height: 40vh;
+    width: 98%;
+    padding: 30px 0 0 30px;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer .box-container .box h3 span{
+    color: brown;
+}
+.footer .box-container .box h3 i{
+    color:white;
+}
+.footer .box-container .box .share a{
+    display: inline;
+    font-size: 20px;
+    color: white;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.footer .box-container .box .share a i{
+    color:white;
+    padding-left: 35px;
+    align-items: center; 
+    justify-content: center;  
+    text-align: center;
+}
+.footer .box-container .box .share a:hover i{
+    color: white;  
+    padding-right: 10px;
+}
+.footer .box-container .box p{
+    font-size: 15px;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: center;
+}
+.footer .box-container .box .contact a{
+    display: block;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+.footer .box-container .box .contact a i{
+    color:white;
+    padding-right: 10px;
+    
+}
+.footer .box-container .box .contact a:hover i{
+    padding-right: 0;
+    
+}
+.footer .box-container .box .first a{
+    display: block;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+.footer .box-container .box .first a i{
+    color:white;
+    padding-right: 10px;
+    
+}
+.footer .box-container .box .first a:hover i{
+    padding-right: 0;
+    
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+
+
